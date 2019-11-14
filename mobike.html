@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="mobike.css">
+</head>
+<!-- 亮点分析：
+1.利用float和@media构造出响应式布局，页面图片和文字会随着窗口的大小的改变而改变 -->
+<!-- 遇到的问题：
+导航栏部分使用浮动时，右浮动的部分没有显示
+原因：
+左浮动时没有设置宽度，所以他的宽度默认为父元素的100%,因此会盖住右边的元素
+解决办法：
+右浮动元素设置position:relative,和z-index -->
+<body>
+    <div class="images">
+			  <div>
+					<div class="left-nav">
+						<p>
+						<span>mobike</span></br>
+						摩拜单车</p>
+						<h1>让自行车回归城市</h1>
+         </div>
+			  <ul class="right-nav">
+						<li>产品</li>
+						<li>摩拜科技</li>
+						<li>关于</li>
+						<li>广告合作</li>
+				</ul>
+					
+				</div>
+			
+        <div></div>
+        <div></div>
+		</div>
+		
+
+    <div class="four">
+			<div class="four-images">
+					<span class="four-one"></span >
+					<span class="four-two"></span>
+					<span class="four-three"></span>
+					<span class="four-four"></span> 
+				</div>
+	 </div>
+	 
+   <div class="first-word">
+			<div class="first-column">
+			 <img src="./imgs/icon-wechat.png" class="bottom-imgs"/>
+				<div class="text">
+					<h4>微信小程序</h4>
+					<span>微信扫一扫，直接用车</span>
+				</div>
+			</div>
+
+			<div class="second-column">
+				<img src="./imgs/icon-rp.png" class="bottom-imgs"/>
+				 <div  class="text">
+					 <h4>红包车</h4>
+					 <span>骑摩拜，能赚钱</span>
+				 </div>
+			</div>
+			<div class="second-column">
+					<img src="./imgs/icon-credit.png" class="bottom-imgs"/>
+					 <div  class="text">
+						 <h4>摩范分</h4>
+						 <span>文明骑车，信用生活</span>
+					 </div>
+			</div>	
+
+	 </div>
+	 	<hr>
+  <div class="bottom-link">
+		<div class="left-link">
+				<img src="./imgs/logo-text.svg" alt="">
+				<ul>
+					<li>Beijing Mobike Technology Co., Ltd</li>
+					<li>客服电话 400-618-7799</li>
+					<li>北京摩拜科技有限公司</li>
+				</ul>
+		</div>
+		<div class="right-link">
+			<div>
+				<h3>产品</h3>
+				<ul>
+					<li>经典版</li>
+					<li>轻骑</li>
+					<li>智能版</li>
+				</ul>
+			</div>
+			<div>
+				<h3>生活</h3>
+				<ul>
+					<li>城市</li>
+				</ul>
+			</div>
+			<div>
+				<h3>关于</h3>
+				<ul>
+					<li>关于摩拜</li>
+					<li>加入我们</li>
+					<li>联系我们</li>
+				</ul>
+			</div>
+			<div>
+				<h3>社交</h3>
+				<ul>
+					<li>微博</li>
+					<li>微信</li>
+					<li>知乎</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<footer>
+		<div class="footer-left">
+			<ul class="footer-text">
+				<li>
+						京 ICP 备15053449 号 京公网安备11010502032956号
+				</li>
+				<li>
+						增值电信业务经营许可证编号：京B2-20170053
+				</li>
+			</ul>
+	 </div>
+		<div class="footer-right">
+			<img src="./imgs/footer-chengxin.jpg" alt="" />
+		</div>
+	</footer>
+</body>
+</html>
+
